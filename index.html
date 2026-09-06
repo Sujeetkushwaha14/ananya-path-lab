@@ -1,148 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ananya PathLab — modern pathology diagnostics, automated laboratory testing and convenient home sample collection.">
-  <title>Ananya PathLab | Accurate Reports. Healthier Tomorrows.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .booking-history{background:#fff}
-    .history-clear{border:1px solid #b9ddd2;border-radius:999px;padding:11px 16px;background:#fff;color:var(--green);font:700 13px "DM Sans";cursor:pointer}
-    .history-list{display:grid;gap:12px}
-    .history-item{display:grid;grid-template-columns:1.2fr 1.2fr auto;gap:20px;align-items:center;padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:#fbfdfc}
-    .history-item div{display:grid;gap:4px}
-    .history-item span,.history-item time{color:var(--muted);font-size:13px}
-    .history-empty{margin:0;padding:20px;border:1px dashed #b9ddd2;border-radius:14px}
-    .history-clear:hover{background:var(--mint)}
-    .notification-dot{display:none;vertical-align:middle;margin-left:6px;width:8px;height:8px;border-radius:50%;background:#dc2626;box-shadow:0 0 0 2px #fff}
-    .notification-dot.visible{display:inline-block}
-    @media(max-width:700px){.history-item{grid-template-columns:1fr;gap:10px}.section-head .history-clear{align-self:flex-start}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Anaya Pathology — blood, urine, semen, sputum, pregnancy, thyroid and hormonal investigations in Deoria, Uttar Pradesh.">
+<title>ANAYA PATHOLOGY | Accuracy You Can Trust</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .brand{gap:12px}
+  .brand-logo{width:78px;height:78px;object-fit:cover;object-position:center;border-radius:50%;border:4px solid #fff;box-shadow:0 5px 16px #102f5830}
+  .brand-name{color:var(--navy);font:800 20px/1.05 Manrope,sans-serif;letter-spacing:.2px;max-width:150px}
+  .footer-logo{width:86px;height:86px;object-fit:cover;object-position:center;border-radius:50%;border:3px solid #fff;box-shadow:0 5px 16px #0003}
+  @media(max-width:600px){.brand-logo{width:58px;height:58px}.brand-name{font-size:16px;max-width:120px}.header{gap:12px}}
+</style>
 </head>
 <body>
+<div class="topbar">
+  <div>📍 Add- Padari Bazar Near Baroda Gramin Bank, Deoria (U.P.)</div>
+  <div class="topbar-right"><span>☎ 8542037690, 7054295612</span><span>◷ Time: 8 AM to 7 PM</span></div>
+</div>
 <header class="header">
-  <a class="brand" href="#home" aria-label="Ananya PathLab home">
-    <span class="brand-mark">✦</span>
-    <span><strong>Ananya PathLab</strong><small>Accurate Reports. Healthier Tomorrows.</small></span>
+  <a class="brand" href="#home" aria-label="Anaya Pathology home">
+    <img class="brand-logo" src="ananya-pathology-logo.jpg" alt="Anaya Pathology logo">
+    <span class="brand-name">ANAYA<br>PATHOLOGY</span>
   </a>
   <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
   <nav id="nav">
-    <a href="#home">Home</a><a href="#tests">Tests</a><a href="#facilities">Facilities</a>
-    <a href="#about">About</a><a class="history-link" id="historyLink" href="#bookingHistory">Booking History<span class="notification-dot" id="historyNotification" aria-label="New booking"></span></a><a href="#contact">Contact</a>
+    <a href="#home">Home</a><a href="#about">About Us</a><a href="#tests">Tests &amp; Services</a>
+    <a href="#packages">Health Packages</a><a href="#reports">Reports</a>
+    <a href="#bookingHistory">Booking History<span class="notification-dot" id="historyNotification" aria-label="New booking"></span></a>
+    <a href="#contact">Contact Us</a>
   </nav>
-  <!-- <a class="btn btn-primary nav-cta" href="#booking">Book a Test</a> -->
+  <a class="btn btn-primary nav-cta" href="#booking">🧪 Book Test</a>
 </header>
 
 <main id="home">
 <section class="hero">
   <div class="hero-copy">
-    <div class="eyebrow">✦ Trusted Diagnostics • Patient First</div>
-    <h1>Your Health.<br><span>Our Priority.</span></h1>
-    <p>Advanced pathology testing with automated machines, expert review and reliable reports — all in one modern lab.</p>
-    <div class="hero-actions">
-      <!-- <a class="btn btn-primary" href="#booking">Book a Test <span>→</span></a> -->
-      <a class="btn btn-light" href="#tests">Explore Tests</a>
-    </div>
+    <span class="eyebrow">WELCOME TO</span>
+    <h1><span>ANAYA</span> PATHOLOGY</h1>
+    <p class="address">📍 Add- Padari Bazar Near Baroda Gramin Bank, Deoria (U.P.)</p>
+    <p class="hindi">यहाँ पर रक्त, मूत्र, वीर्य, बलगम, प्रेग्नेंसी, थायरॉइड (T₃, T₄, TSH)<br>व अन्य हार्मोनल जाँच के लिए संपर्क करें।</p>
     <div class="trust-row">
-      <span>✓ Accurate Results</span><span>✓ Modern Machines</span><span>✓ Home Collection</span>
+      <div><b>✓</b><span>Accurate<br>Reports</span></div>
+      <div><b>●</b><span>Trusted<br>Results</span></div>
+      <div><b>₹</b><span>Affordable<br>Pricing</span></div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#booking">▣ Book a Test</a>
+      <a class="btn btn-outline" href="#tests">▤ View Test List</a>
     </div>
   </div>
   <div class="hero-photo">
-    <img src="ai-generated-lab-hero.jpg" alt="AI-generated modern pathology laboratory">
-    <div class="stats-card">
-      <div><b>50K+</b><small>Patients Served</small></div>
-      <div><b>500+</b><small>Diagnostic Tests</small></div>
-      <div><b>20+</b><small>Modern Machines</small></div>
-      <div><b>99.9%</b><small>Quality Focus</small></div>
-    </div>
+    <img src="ai-generated-lab-hero.jpg" alt="Pathology laboratory">
+    <div class="hero-badge">YOUR HEALTH<br><strong>OUR PRIORITY</strong><small>ACCURACY YOU CAN TRUST</small></div>
   </div>
 </section>
 
-<section class="section" id="tests">
-  <div class="section-head"><div><span class="kicker">POPULAR TESTS</span><h2>Complete testing, made simple.</h2></div><a href="#booking">View all tests →</a></div>
-  <div class="cards">
-    <article class="test-card"><div class="icon">🩸</div><h3>Complete Blood Count</h3><p>CBC — overall blood health.</p><strong>From ₹300</strong><button data-test="Complete Blood Count">Book Now</button></article>
-    <article class="test-card"><div class="icon">🧪</div><h3>Liver Function Test</h3><p>LFT — liver health markers.</p><strong>From ₹600</strong><button data-test="Liver Function Test">Book Now</button></article>
-    <article class="test-card"><div class="icon">🫘</div><h3>Kidney Function Test</h3><p>KFT — kidney health markers.</p><strong>From ₹600</strong><button data-test="Kidney Function Test">Book Now</button></article>
-    <article class="test-card"><div class="icon">🦋</div><h3>Thyroid Profile</h3><p>T3, T4 & TSH testing.</p><strong>From ₹500</strong><button data-test="Thyroid Profile">Book Now</button></article>
-    <article class="test-card"><div class="icon">❤️</div><h3>Lipid Profile</h3><p>Cholesterol & lipid markers.</p><strong>From ₹600</strong><button data-test="Lipid Profile">Book Now</button></article>
-    <article class="test-card"><div class="icon">💧</div><h3>Diabetes Profile</h3><p>FBS, PPBS & HbA1c.</p><strong>From ₹700</strong><button data-test="Diabetes Profile">Book Now</button></article>
+<section class="quick-tests" id="tests">
+  <button class="test-tile" data-test="CBC"><span>🩸</span><b>Blood Test</b></button>
+  <button class="test-tile" data-test="Urine Test"><span>🧪</span><b>Urine Test</b></button>
+  <button class="test-tile" data-test="Semen Test"><span>⌁</span><b>Semen Test</b></button>
+  <button class="test-tile" data-test="Sputum Test"><span>◉</span><b>Sputum Test</b></button>
+  <button class="test-tile" data-test="Pregnancy Test"><span>♙</span><b>Pregnancy Test</b></button>
+  <button class="test-tile" data-test="Thyroid Profile"><span>◒</span><b>Thyroid (T₃, T₄, TSH)</b></button>
+  <button class="test-tile" data-test="Hormonal Tests"><span>⌬</span><b>Hormonal Tests</b></button>
+  <button class="test-tile" data-test="Other / Need guidance"><span>•••</span><b>Other Tests</b></button>
+</section>
+
+<section class="home-strip">
+  <div><span class="home-icon">◷</span><strong>होम कलेक्शन की सुविधा उपलब्ध है।</strong> <b>(Time- 8 AM to 7PM)</b></div>
+  <a class="btn btn-primary" href="#booking">⌂ Request Home Collection</a>
+</section>
+
+<section class="section intro" id="about">
+  <div class="section-head"><span class="kicker">ABOUT US</span><h2>Reliable pathology services with patient-first care.</h2></div>
+  <p>We provide routine and specialized pathology investigations with a focus on clear reporting, convenient sample collection and dependable service. Please confirm test availability, preparation and pricing with the lab before visiting.</p>
+  <div class="mini-cards">
+    <div><b>01</b><h3>Sample Collection</h3><p>Lab visit and home collection options.</p></div>
+    <div><b>02</b><h3>Testing</h3><p>Routine blood, urine and hormonal investigations.</p></div>
+    <div><b>03</b><h3>Reports</h3><p>Organized reports for your records.</p></div>
   </div>
 </section>
 
-<section class="split section" id="about">
-  <div>
-    <span class="kicker">WHY ANANYA PATHLAB</span>
-    <h2>Technology that works for better diagnosis.</h2>
-    <p>From sample processing to reporting, our workflow is designed around accuracy, consistency and patient convenience.</p>
-    <ul class="checklist">
-      <li><span>✓</span> Automated hematology & biochemistry systems</li>
-      <li><span>✓</span> Immunoassay and specialized diagnostics</li>
-      <li><span>✓</span> Experienced pathologists & trained technicians</li>
-      <li><span>✓</span> Quality-controlled sample handling</li>
-      <li><span>✓</span> Home sample collection available</li>
-    </ul>
-    <a class="btn btn-primary" href="#facilities">See Our Facilities →</a>
-  </div>
-  <div class="machine-panel">
-    <div class="machine-glow"></div>
-    <div class="machine-box"><div class="machine-screen"></div><div class="machine-base"></div></div>
-    <span class="machine-label">AUTOMATED LAB SYSTEM</span>
+<section class="section package-section" id="packages">
+  <div class="section-head"><div><span class="kicker">HEALTH PACKAGES</span><h2>Popular check-up categories.</h2></div></div>
+  <div class="package-grid">
+    <article><span>🩸</span><h3>Basic Health Check</h3><p>CBC, glucose and routine screening.</p><button data-test="Basic Health Check">Book Package</button></article>
+    <article><span>🦋</span><h3>Thyroid Check</h3><p>T₃, T₄ and TSH investigation.</p><button data-test="Thyroid Profile">Book Package</button></article>
+    <article><span>❤</span><h3>Diabetes &amp; Lipid</h3><p>Blood sugar and lipid-related tests.</p><button data-test="Diabetes & Lipid Profile">Book Package</button></article>
   </div>
 </section>
 
-<section class="section facilities" id="facilities">
-  <div class="section-head"><div><span class="kicker">OUR LAB</span><h2>Modern facilities. Complete diagnostics.</h2></div></div>
-  <div class="facility-grid">
-    <div><span>01</span><h3>Hematology</h3><p>CBC, ESR and blood-cell analysis.</p></div>
-    <div><span>02</span><h3>Biochemistry</h3><p>Liver, kidney, glucose, lipid and enzyme testing.</p></div>
-    <div><span>03</span><h3>Immunoassay</h3><p>Hormones, thyroid and selected biomarkers.</p></div>
-    <div><span>04</span><h3>Microbiology</h3><p>Culture and sensitivity testing where applicable.</p></div>
-    <div><span>05</span><h3>Clinical Pathology</h3><p>Urine, stool and routine clinical investigations.</p></div>
-    <div><span>06</span><h3>Sample Processing</h3><p>Controlled workflow from collection to reporting.</p></div>
+<section class="section facilities" id="reports">
+  <div class="section-head"><div><span class="kicker">REPORTS &amp; SERVICES</span><h2>Simple process from booking to report.</h2></div></div>
+  <div class="service-grid">
+    <div><span>01</span><h3>Book</h3><p>Choose your investigation and collection option.</p></div>
+    <div><span>02</span><h3>Collect</h3><p>Visit the lab or request home collection.</p></div>
+    <div><span>03</span><h3>Report</h3><p>Keep your report details organized for follow-up.</p></div>
   </div>
 </section>
 
-<section class="docker section">
-  <div class="docker-copy"><span class="kicker">DIGITAL LAB WORKFLOW</span><h2>Secure, trackable lab operations.</h2><p>Our concept includes Docker-based lab software services for isolated, repeatable processing workflows. The machines perform the physical testing; software helps manage data, reports and internal services.</p><div class="docker-pill">▣ Docker-enabled services</div></div>
-  <div class="terminal"><div><i></i><i></i><i></i></div><code>$ lab-status<br><span>✓ analyzers online</span><br><span>✓ sample queue synced</span><br><span>✓ report service healthy</span></code></div>
-</section>
-
-<section class="booking section" id="booking">
-  <div><span class="kicker">BOOK A TEST</span><h2>Need a test? We’ll make it easy.</h2><p>Fill the form and our team can confirm the test, preparation instructions and collection option.</p></div>
+<section class="section booking" id="booking">
+  <div class="booking-copy">
+    <span class="kicker">BOOK A TEST</span><h2>Need a test? We’ll make it easy.</h2>
+    <p>Submit a booking request. Your booking is saved in Booking History for easy follow-up.</p>
+    <div class="contact-card"><b>📞 8542037690, 7054295612</b><span>⏱ 8 AM – 7 PM</span></div>
+  </div>
   <form id="bookingForm">
-    <input id="name" placeholder="Your name" required>
-    <input id="phone" type="tel" placeholder="10-digit phone number" inputmode="numeric" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
-    <select id="test" required><option value="" selected disabled>Select a test</option><option>CBC</option><option>LFT</option><option>KFT</option><option>Thyroid Profile</option><option>Lipid Profile</option><option>Diabetes Profile</option><option>Other / Need guidance</option></select>
+    <input id="name" placeholder="Patient name" autocomplete="name" required>
+    <input id="phone" type="tel" placeholder="Patient 10-digit mobile" inputmode="numeric" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+    <select id="test" required><option value="" selected disabled>Select a test</option><option>CBC</option><option>LFT</option><option>KFT</option><option>Thyroid Profile</option><option>Lipid Profile</option><option>Diabetes Profile</option><option>Urine Test</option><option>Semen Test</option><option>Sputum Test</option><option>Pregnancy Test</option><option>Hormonal Tests</option><option>Basic Health Check</option><option>Other / Need guidance</option></select>
     <select id="collection"><option>Visit lab</option><option>Home sample collection</option></select>
     <button class="btn btn-primary" type="submit">Request Booking →</button>
-    <p class="form-note" id="formNote"></p>
+    <p class="form-note" id="formNote" role="status"></p>
   </form>
 </section>
 
 <section class="section booking-history" id="bookingHistory">
-  <div class="section-head">
-    <div><span class="kicker">YOUR BOOKINGS</span><h2>Booking History</h2></div>
-    <button class="history-clear" id="clearHistory" type="button">Clear history</button>
-  </div>
-  <div class="history-list" id="historyList">
-    <p class="history-empty">No bookings yet. Submitted bookings will appear here.</p>
-  </div>
+  <div class="section-head"><div><span class="kicker">YOUR BOOKINGS</span><h2>Booking History</h2></div><button class="history-clear" id="clearHistory" type="button">Clear history</button></div>
+  <div class="history-list" id="historyList"><p class="history-empty">No bookings yet. Submitted bookings will appear here.</p></div>
 </section>
 </main>
 
 <footer id="contact">
   <div class="footer-grid">
-    <div><div class="brand footer-brand"><span class="brand-mark">✦</span><span><strong>Ananya PathLab</strong><small>Accurate Reports. Healthier Tomorrows.</small></span></div><p>Modern diagnostic testing with a patient-first approach.</p></div>
-    <div><h4>Services</h4><a href="#tests">Pathology Tests</a><a href="#booking">Home Collection</a><a href="#facilities">Laboratory</a></div>
-    <div><h4>Contact</h4><p>Ananya PathLab<br>Padari Bazaar, Deoria (Uttar Pradesh)</p><p>+91 8542037690<br>info@ananyapathlab.shop</p></div>
-    <div><h4>Hours</h4><p>Mon–Sat: 7:00 AM – 8:00 PM<br>Sun: 7:00 AM – 2:00 PM</p></div>
+    <div><img class="footer-logo" src="ananya-pathology-logo.jpg" alt="Anaya Pathology logo"><p>Accuracy You Can Trust.</p></div>
+    <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About Us</a><a href="#tests">Tests &amp; Services</a><a href="#booking">Book Test</a></div>
+    <div><h4>Contact Us</h4><p>📞 8542037690, 7054295612</p><p>📍 Add- Padari Bazar Near Baroda Gramin Bank, Deoria (U.P.)</p><p>◷ Time: 8 AM to 7 PM</p></div>
+    <div><h4>Follow Us</h4><div class="social-links" style="display:flex;gap:11px;align-items:center;margin-top:18px" aria-label="Social media links">
+      <a class="social-link whatsapp" style="display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:#20b968;color:#fff" href="https://wa.me/918542037690" target="_blank" rel="noopener" aria-label="Chat with Anaya Pathology on WhatsApp" title="WhatsApp">
+        <svg style="width:21px;height:21px;fill:currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L.2 23.8l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.2ZM12.1 21.4h-.1c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.5 9.5 0 1 1 8.4 4.6Zm5.2-7.1c-.3-.2-1.7-.8-2-1-.3-.1-.5-.2-.7.2-.2.3-.7 1-.8 1.2-.2.2-.3.3-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.7.1-.2.1-.4 0-.6l-.6-1.5c-.2-.4-.4-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.4.9 3.3.8.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.1-1.3-.1-.1-.3-.2-.6-.3Z"/></svg>
+      </a>
+      <a class="social-link facebook" style="display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:#1877f2;color:#fff" href="https://www.facebook.com/pankaj.kumar.30345" target="_blank" rel="noopener" aria-label="Visit Anaya Pathology on Facebook" title="Facebook">
+        <svg style="width:21px;height:21px;fill:currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.7 23v-9h3l.5-3.5h-3.5V8.2c0-1 .3-1.7 1.8-1.7h1.9V3.3c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.8H7.5V14h2.9v9h3.3Z"/></svg>
+      </a>
+      <a class="social-link instagram" style="display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#f9ce34,#ee2a7b 55%,#6228d7);color:#fff" href="https://www.instagram.com/kumarpankaj3742" target="_blank" rel="noopener" aria-label="Visit Anaya Pathology on Instagram" title="Instagram">
+        <svg style="width:21px;height:21px;fill:currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5ZM17.5 6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0 2.2Z"/></svg>
+      </a>
+    </div></div>
   </div>
-  <div class="copyright">© 2026 Ananya PathLab</div>
+  <div class="copyright">© 2026 Anaya Pathology. All Rights Reserved. <span>Accuracy You Can Trust</span></div>
 </footer>
 <script src="script.js"></script>
 </body>

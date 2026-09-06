@@ -1,15 +1,20 @@
-ANANYA PATHLAB WEBSITE
-=======================
-Files:
-- index.html
-- style.css
-- script.js
-- ai-generated-lab-hero.jpg
+ANAYA PATHOLOGY WEBSITE — UPDATED
+================================
 
-Open index.html in a browser.
+What changed
+- Reworked the UI to match the supplied pink/navy design direction.
+- Replaced the old logo asset with a crop of the logo from the supplied pathology card image.
+- Kept Booking History and the new-booking notification dot.
+- Kept test selection and home-collection option.
 
-Notes:
-- The hero image is generated with AI from the requested modern pathology-lab concept.
-- Replace placeholder address, phone, email, prices, accreditation/quality claims and machine details with verified real information before publishing.
-- The Docker section is intentionally described as a software/lab workflow concept: Docker does not perform the physical lab test.
-- The booking form is front-end demo only; connect it to your backend/WhatsApp/email/API for real bookings.
+GitHub Pages
+1. Upload this folder to a GitHub repository.
+2. In Settings > Pages, choose the main branch and root folder.
+3. Open the GitHub Pages URL after deployment.
+
+For local preview, open index.html directly in a browser.
+
+Important
+- Booking History is browser-localStorage in this version, so it is device/browser specific.
+- Before production, connect bookings to a database if you need a shared admin history.
+- Verify all displayed address, phone, service, timing and pricing details before publishing.
