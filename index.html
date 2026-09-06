@@ -9,6 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .booking-history{background:#fff}
+    .history-clear{border:1px solid #b9ddd2;border-radius:999px;padding:11px 16px;background:#fff;color:var(--green);font:700 13px "DM Sans";cursor:pointer}
+    .history-list{display:grid;gap:12px}
+    .history-item{display:grid;grid-template-columns:1.2fr 1.2fr auto;gap:20px;align-items:center;padding:18px 20px;border:1px solid var(--line);border-radius:14px;background:#fbfdfc}
+    .history-item div{display:grid;gap:4px}
+    .history-item span,.history-item time{color:var(--muted);font-size:13px}
+    .history-empty{margin:0;padding:20px;border:1px dashed #b9ddd2;border-radius:14px}
+    .history-clear:hover{background:var(--mint)}
+    .notification-dot{display:none;vertical-align:middle;margin-left:6px;width:8px;height:8px;border-radius:50%;background:#dc2626;box-shadow:0 0 0 2px #fff}
+    .notification-dot.visible{display:inline-block}
+    @media(max-width:700px){.history-item{grid-template-columns:1fr;gap:10px}.section-head .history-clear{align-self:flex-start}}
+  </style>
 </head>
 <body>
 <header class="header">
@@ -19,9 +32,9 @@
   <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
   <nav id="nav">
     <a href="#home">Home</a><a href="#tests">Tests</a><a href="#facilities">Facilities</a>
-    <a href="#about">About</a><a href="#contact">Contact</a>
+    <a href="#about">About</a><a class="history-link" id="historyLink" href="#bookingHistory">Booking History<span class="notification-dot" id="historyNotification" aria-label="New booking"></span></a><a href="#contact">Contact</a>
   </nav>
-  <a class="btn btn-primary nav-cta" href="#booking">Book a Test</a>
+  <!-- <a class="btn btn-primary nav-cta" href="#booking">Book a Test</a> -->
 </header>
 
 <main id="home">
@@ -31,7 +44,7 @@
     <h1>Your Health.<br><span>Our Priority.</span></h1>
     <p>Advanced pathology testing with automated machines, expert review and reliable reports — all in one modern lab.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#booking">Book a Test <span>→</span></a>
+      <!-- <a class="btn btn-primary" href="#booking">Book a Test <span>→</span></a> -->
       <a class="btn btn-light" href="#tests">Explore Tests</a>
     </div>
     <div class="trust-row">
@@ -103,12 +116,22 @@
   <div><span class="kicker">BOOK A TEST</span><h2>Need a test? We’ll make it easy.</h2><p>Fill the form and our team can confirm the test, preparation instructions and collection option.</p></div>
   <form id="bookingForm">
     <input id="name" placeholder="Your name" required>
-    <input id="phone" placeholder="Phone number" inputmode="tel" required>
-    <select id="test" required><option value="">Select a test</option><option>CBC</option><option>LFT</option><option>KFT</option><option>Thyroid Profile</option><option>Lipid Profile</option><option>Diabetes Profile</option><option>Other / Need guidance</option></select>
+    <input id="phone" type="tel" placeholder="10-digit phone number" inputmode="numeric" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+    <select id="test" required><option value="" selected disabled>Select a test</option><option>CBC</option><option>LFT</option><option>KFT</option><option>Thyroid Profile</option><option>Lipid Profile</option><option>Diabetes Profile</option><option>Other / Need guidance</option></select>
     <select id="collection"><option>Visit lab</option><option>Home sample collection</option></select>
     <button class="btn btn-primary" type="submit">Request Booking →</button>
     <p class="form-note" id="formNote"></p>
   </form>
+</section>
+
+<section class="section booking-history" id="bookingHistory">
+  <div class="section-head">
+    <div><span class="kicker">YOUR BOOKINGS</span><h2>Booking History</h2></div>
+    <button class="history-clear" id="clearHistory" type="button">Clear history</button>
+  </div>
+  <div class="history-list" id="historyList">
+    <p class="history-empty">No bookings yet. Submitted bookings will appear here.</p>
+  </div>
 </section>
 </main>
 
@@ -116,10 +139,10 @@
   <div class="footer-grid">
     <div><div class="brand footer-brand"><span class="brand-mark">✦</span><span><strong>Ananya PathLab</strong><small>Accurate Reports. Healthier Tomorrows.</small></span></div><p>Modern diagnostic testing with a patient-first approach.</p></div>
     <div><h4>Services</h4><a href="#tests">Pathology Tests</a><a href="#booking">Home Collection</a><a href="#facilities">Laboratory</a></div>
-    <div><h4>Contact</h4><p>123 Health Care Lane<br>Gurugram, Haryana</p><p>+91 98765 43210<br>info@ananyapathlab.com</p></div>
+    <div><h4>Contact</h4><p>Ananya PathLab<br>Padari Bazaar, Deoria (Uttar Pradesh)</p><p>+91 8542037690<br>info@ananyapathlab.shop</p></div>
     <div><h4>Hours</h4><p>Mon–Sat: 7:00 AM – 8:00 PM<br>Sun: 7:00 AM – 2:00 PM</p></div>
   </div>
-  <div class="copyright">© 2026 Ananya PathLab. Demo website — replace contact details, accreditation claims and prices with verified information.</div>
+  <div class="copyright">© 2026 Ananya PathLab</div>
 </footer>
 <script src="script.js"></script>
 </body>
